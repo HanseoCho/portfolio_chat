@@ -4,6 +4,15 @@
 <head>
 	<title>Home</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+	$.ajax({url:"test",method:"post",data:{"test":"123"}})
+	.done(function(data){
+		console.log(data)
+	})
+})
+</script>
 <body>
 <h1>
 	Hello world!  

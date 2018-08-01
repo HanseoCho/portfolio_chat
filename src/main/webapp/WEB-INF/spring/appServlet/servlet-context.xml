@@ -23,7 +23,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.java.chat" />
+	<context:component-scan base-package="com.java.**" />
 	
 	<beans:bean id="echoHandler" class="com.java.chat.EchoHandler"/>
 	<websocket:handlers>
