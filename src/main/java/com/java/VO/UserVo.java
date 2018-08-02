@@ -1,10 +1,10 @@
 package com.java.VO;
 
 public class UserVo {
-	String regId;
-	String regPw;
-	String regName;
-	String regInfo;
+	private String regId;
+	private String regPw;
+	private String regName;
+	private String regInfo;
 	
 	public String getRegId() {
 		return regId;
