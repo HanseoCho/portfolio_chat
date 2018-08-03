@@ -1,4 +1,4 @@
-package com.java.Session;
+package com.java.User;
 
 import com.java.VO.UserVo;
 

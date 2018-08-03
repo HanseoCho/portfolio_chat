@@ -1,40 +1,36 @@
 package com.java.VO;
 
 public class UserVo {
-	private String regId;
-	private String regPw;
-	private String regName;
-	private String regInfo;
-	
-	public String getRegId() {
-		return regId;
+	private String uId;
+	private String uPw;
+	private String uName;
+	private String uInfo;
+	public String getuId() {
+		return uId;
 	}
-	public void setRegId(String regId) {
-		this.regId = regId;
+	public void setuId(String uId) {
+		this.uId = uId;
 	}
-	public String getRegPw() {
-		return regPw;
+	public String getuPw() {
+		return uPw;
 	}
-	public void setRegPw(String regPw) {
-		this.regPw = regPw;
+	public void setuPw(String uPw) {
+		this.uPw = uPw;
 	}
-	public String getRegName() {
-		return regName;
+	public String getuName() {
+		return uName;
 	}
-	public void setRegName(String regName) {
-		this.regName = regName;
+	public void setuName(String uName) {
+		this.uName = uName;
 	}
-	public String getRegInfo() {
-		return regInfo;
+	public String getuInfo() {
+		return uInfo;
 	}
-	public void setRegInfo(String regInfo) {
-		this.regInfo = regInfo;
+	public void setuInfo(String uInfo) {
+		this.uInfo = uInfo;
 	}
-	
 	@Override
 	public String toString() {
-		return "UserVo [regId=" + regId + ", regPw=" + regPw + ", regName=" + regName + ", regInfo=" + regInfo + "]";
+		return "UserVo [uId=" + uId + ", uPw=" + uPw + ", uName=" + uName + ", uInfo=" + uInfo + "]";
 	}
-	
-	
 }

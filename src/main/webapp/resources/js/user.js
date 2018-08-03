@@ -6,8 +6,12 @@
     			if(data == "비중복"){
     				result = true;
     			}
-    			else{
+    			else if(data == "중복"){
     				result = false;
+    			}
+    			else {
+    				alert("오룹라생 오루코드 "+data);
+    				return false;
     			}
     		})
     		return result;

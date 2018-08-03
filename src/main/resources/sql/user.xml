@@ -7,18 +7,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from user where id = #{regId} limit 1;
 	</select>
 	<insert id="insert" parameterType="com.java.VO.UserVo">
-		insert into user(id,pw,name,info) values (#{regId},#{regPw},#{regName},#{regInfo});
+		insert into user(id,pw,name,info) values (#{uId},#{uPw},#{uName},#{uInfo});
 	</insert>
 	
-	<update id="update" parameterType="HashMap">
-		update board 
-		set title       = #{title},
-			content = #{content}
-		where boardNo = #{boardNo}
+	<update id="update" parameterType="com.java.VO.UserVo">
+	update user set `pw` = #{uPw}, `name` = #{uName}, `info` = #{uInfo}  where id = #{uId};
 	</update>
-	<update id="delete" parameterType="HashMap">
-		update board 
-		set delYn = 'Y'
-		where boardNo = #{boardNo}
+	<update id="delete" parameterType="com.java.VO.UserVo">
+		update user set `delYn` = 'Y'  where id = #{uId};
 	</update>
+	
+	<select id="login">
+		select count(*) from user where id = #{uId} and pw = #{uPw}
+	</select>
 </mapper>
