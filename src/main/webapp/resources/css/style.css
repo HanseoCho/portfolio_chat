@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+body{
+}
 .sbody{
     margin: 10vh 10vw;
     width: 80%;
@@ -48,7 +50,13 @@
 }   
 .fl_gr9{
     flex-grow: 9;
-}    
+}
+.fl_gr10{
+    flex-grow: 10;
+}
+.fl_gr11{
+    flex-grow: 11;
+}                
 .bg{
     background-color: black;
 }

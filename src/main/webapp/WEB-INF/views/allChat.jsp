@@ -55,17 +55,23 @@
         		<h3 class="mt20 text_center">로그인후 이용가능합니다(세션이없을시)</h3>
         	</c:when>
         	<c:otherwise>
-        		<div class ="fl fl_row">
-        		<p>현재접속인원 :<b>3명</b></p>
+        		<h3>전체톡</h3>
+        		<div style="background-color: #c8c8c8;">
+        			<div style="height:70vh; position:relative;" class="fl fl_col">
+        				<div class="fl fl_row fl">
+        					<div class="fl_gr4">1</div>
+        					<div class="fl_gr1">2</div>
+        				</div>
+        				<div style="position: absolute;bottom: 0%;left: 0%;background-color: black;">
+        					<input type="text" id="chatInput" placeholder="입력창..." style="display:block;height:30px;">
+        				</div>        				
+        			</div>
         		</div>
-       			<div style="display:block; width:200px; height:200px; border: 1px solid black; background-color: white; ">
-       				<!-- 유저목록 한줄한줄 추가양식
-       				 <div style="width:200px; text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">가나다라마바사아자차캍파한아람ㄴㅇ람ㅇ낢아라</div> -->
-       			</div>
         	</c:otherwise>
        	</c:choose>
         <div>
         </div>        
     </section>
+</body>
 </body>
 </html>
